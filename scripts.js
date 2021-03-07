@@ -23,7 +23,20 @@ function startRound(){
   score(hands[computerChoice], this.textContent)
 }
 
+function winner(i_winner)
+{
+  if(i_winner == "Player"){
+    playerScore+=1;
+    playerScoreText.textContent = `Player score: ${playerScore}`;
+  }
 
+  if(i_winner == "Computer"){
+    computerScore+=1;
+    computerScoreText.textContent = `Computer score: ${computerScore}`;
+  }
+  
+  console.log(i_winner + " won");
+}
 
 function score(i_computerChoice, i_playerChoice)
 {
@@ -62,19 +75,4 @@ function score(i_computerChoice, i_playerChoice)
       winner("Computer");
     }
   }
-}
-
-function winner(i_winner)
-{
-  if(i_winner == "Player"){
-    playerScore+=1;
-    playerScoreText.textContent = `Player score: ${playerScore}`;
-  }
-
-  if(i_winner == "Computer"){
-    computerScore+=1;
-    computerScoreText.textContent = `Computer score: ${computerScore}`;
-  }
-  
-  console.log(i_winner + " won");
 }
