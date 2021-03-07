@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  header{
+    background-color: darkgray;
+    color: yellow;
+    padding: 0.5vw
+  }
+  
+  #choices{
+    background-color: darkgray;
+    padding: 0.5vw;
+    
+  }
+  #choices p{
+    display: inline-block;
+    color: white;
+    padding-left: 5vw;
+  }
+  
+  #buttons{
+    background-color: orange;
+    padding: 0.5vw;
+  }
+  
+  #scores{
+    background-color: orange;
+    padding: 0.5vw;
+  }
+  
+  #scores p{
+    display: inline-block;
+    color: white;
+    padding-left: 5vw;
+  
+  }
+  
