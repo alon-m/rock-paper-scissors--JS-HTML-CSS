@@ -6,8 +6,9 @@ let playerScoreText = document.getElementById("playerScore");
 let computerScoreText = document.getElementById("computerScore");
 
 buttons.forEach(button => {
-  button.addEventListener("click", startRound);
+ button.addEventListener("click", startRound);
 });
+
 
 let player=document.getElementById("playerChoice");
 let computer=document.getElementById("computerChoice");
@@ -18,8 +19,8 @@ let SCISSORS = hands[2];
 
 function startRound(){
   let computerChoice = Math.floor(Math.random() * buttons.length);
-  player.textContent = `Player: ${this.textContent}`;
-  computer.textContent = `Computer: ${hands[computerChoice]}`;
+  player.innerText = `Player: ${this.textContent}`;
+  computer.innerText = `Computer: ${hands[computerChoice]}`;
   score(hands[computerChoice], this.textContent)
 }
 
